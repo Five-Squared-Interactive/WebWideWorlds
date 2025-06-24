@@ -1,8 +1,8 @@
 # 🌐 Web Wide Worlds Documentation
 
-Welcome to the Web Wide Worlds docs: a technical guide to building and navigating persistent, linkable 3D spaces on the open web.
+This documentation covers Web Wide Worlds. It is a technical guide to building and navigating persistent, linkable 3D spaces on the open web.
 
-## 🚀 Modules
+## 🚀 Core Components and Products
 
 - [WebVerse](./WebVerse.md)
 - [WorldHub](./WorldHub.md)
