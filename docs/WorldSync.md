@@ -7,10 +7,9 @@
 - MQTT / WebSocket hybrid
 - Presence & transform updates
 - CRDT-style change buffering
-- Supports ghosting for low-bandwidth clients
 
 ## Integration
 
-- Used by WebVerse for real-time sync
+- Cna be used in Worlds for real-time sync
 - Works with VEML triggers and JavaScript APIs
 
