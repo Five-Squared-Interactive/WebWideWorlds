@@ -11,5 +11,3 @@ Web Wide Worlds offers two creation tools:
 - Full scripting and logic support
 - Modular imports + portal creation
 - Designed for developers and power creators
-
-Use WorldHub’s **Compare Worlds** feature to guide users to the right entry point.
