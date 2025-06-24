@@ -1,12 +1,29 @@
 # 🧠 WorldOS
 
-**WorldOS** is a secure, containerized execution layer for each world. Think of it as a microkernel for spatial apps.
+**WorldOS** is a modular, distributed runtime framework that manages execution, communication, and coordination between applications inside and across worlds. Inspired by the Robot Operating System (ROS), it treats each world as an orchestrated system of services, triggers, and behaviors.
 
-## Responsibilities
+---
 
-- Sandbox JS World API usage
-- Manage VEML-defined permissions
-- Isolate per-user execution contexts
-- Enforce interaction rate-limits and ownership
+## 🔌 Core Architecture
 
-WorldOS ensures that even remixable or forked worlds remain safe, predictable, and maintain creator intent.
+- **Message Bus**: Built on [MQTT](https://mqtt.org/), enabling low-latency, pub/sub-style event communication across world components
+- **App-Oriented Design**: Worlds can register or instantiate *apps* (scripts, logic handlers, services) that listen for specific topics
+- **Interoperable & Dynamic**: Apps can be written in different languages or deployed across containerized nodes
+
+---
+
+## 📦 Apps in WorldOS
+
+Apps are pluggable and reactive units. Each app:
+
+- Subscribes to one or more MQTT topics
+- Can publish outbound messages (e.g. for other apps or world state)
+- Can be ephemeral (triggered once) or long-lived
+
+### Example Topics
+
+```plaintext
+world/zone01/enter
+world/crate_01/trigger/open
+worldsync/user/position
+worldhub/profile/update
